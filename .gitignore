@@ -1,0 +1,14 @@
+# Output produced by the scripts
+*.csv
+*.json
+*.log
+reports/
+results/
+# Keep the synthetic demo data
+!samples/**
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

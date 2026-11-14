@@ -1,0 +1,11 @@
+# Hardened example sshd_config used by the tests.
+Port 2222
+PermitRootLogin no
+PasswordAuthentication no
+PermitEmptyPasswords no
+X11Forwarding no
+MaxAuthTries 3
+
+# Settings inside Match blocks are conditional and must not be read as global.
+Match User backup
+    PasswordAuthentication yes

@@ -1,0 +1,8 @@
+# Deliberately weak sshd_config used by the tests. Do not use.
+Port 22
+Protocol 2,1
+PermitRootLogin yes
+PasswordAuthentication yes
+PermitEmptyPasswords yes
+X11Forwarding yes
+MaxAuthTries 10
