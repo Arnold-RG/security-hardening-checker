@@ -155,3 +155,17 @@ point for hardening, not a replacement for a professional security assessment.
 ## License
 
 [MIT](LICENSE) - Copyright (c) 2026 Arnold Rurangwa
+
+---
+
+## Maintainer security and release criteria
+
+**Read-only by design.** No check should modify firewall rules, system services, accounts, registry settings or protected files as a side effect.
+
+- Maintain a clear distinction between `PASS`, `WARN`, `FAIL`, unavailable and insufficient-permission results.
+- Test on supported Windows and Linux editions with least-privilege accounts and controlled, intentionally misconfigured fixtures.
+- Treat missing or restricted system data as **unknown**, not evidence that a machine is secure.
+- Keep platform baselines current and document any rule that can cause false positives.
+- Run script linting, regression tests and a reviewed changelog in CI; never claim a device or organization is certified by this tool.
+
+This project is an assessment assistant, not a replacement for professional security evaluation or a reason to deploy Kubernetes.
